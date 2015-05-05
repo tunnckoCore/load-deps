@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "extend-shallow": "^1.1.2",
-    "is-match": "^0.1.0",
+    "is-match": "^0.2.0",
     "load-pkg": "^1.2.0"
   },
   "devDependencies": {
