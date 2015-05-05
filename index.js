@@ -2,6 +2,7 @@
  * load-deps <https://github.com/tunnckoCore/load-deps>
  *
  * Copyright (c) 2015 Charlike Mike Reagent, contributors.
+ * Copyright (c) 2014-2015 Jon Schlinkert.
  * Released under the MIT license.
  */
 
