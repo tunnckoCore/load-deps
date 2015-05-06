@@ -1,6 +1,6 @@
 {
   "name": "load-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. Faster alternative to `load-plugins`.",
   "scripts": {
     "test": "standard && node test.js",
