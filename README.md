@@ -64,6 +64,17 @@ var plugin = loadDeps('my-plugins-*', {
 ```
 
 
+## Related
+- [benz](https://github.com/tunnckocore/benz): Compose your control flow with absolute elegance. Support async/await, callbacks, thunks, generators, promises, observables, child processes and streams. Can power applications that need to have plugins. Useful for creating task, test and bench runners.
+- [create-callback](https://github.com/tunnckocore/create-callback): Create callback api from synchronous function. Same as `make-callback`, but won't handle generators and if async function is given returns it.
+- [extend-shallow](https://github.com/jonschlinkert/extend-shallow): Extend an object with the properties of additional objects. node.js/javascript util.
+- [is-match](https://github.com/jonschlinkert/is-match): Create a matching function from a glob pattern, regex, string, array, object or function.
+- [is-kindof](https://github.com/tunnckocore/is-kindof): Check type of given javascript value. Support promises, generators, streams, and native types. Thin wrapper around `kind-of` module.
+- [is-extendable](https://github.com/jonschlinkert/is-extendable): Returns true if a value is any of the object types: array, regexp, plain object, function or date. This is useful for determining if a value can be extended, e.g. "can the value have keys?"
+- [load-plugins](https://github.com/jonschlinkert/load-plugins): Load plugins for gulp, grunt, assemble, verb any node.js app that needs to load plugins from node_modules or local folders.
+- [load-pkg](https://github.com/jonschlinkert/load-pkg): Load the package.json in the base of the user's current project.
+
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/load-deps/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
