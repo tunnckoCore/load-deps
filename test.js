@@ -1,10 +1,11 @@
-/**
+/*!
  * load-deps <https://github.com/tunnckoCore/load-deps>
  *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Copyright (c) 2014-2015 Jon Schlinkert.
+ * Copyright (c) 2015 Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)
  * Released under the MIT license.
  */
+
+/* jshint asi:true */
 
 'use strict'
 

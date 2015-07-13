@@ -1,8 +1,8 @@
-/**
+/*!
  * load-deps <https://github.com/tunnckoCore/load-deps>
  *
- * Copyright (c) 2015 Charlike Mike Reagent, contributors.
- * Copyright (c) 2014-2015 Jon Schlinkert.
+ * Copyright (c) 2015 Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)
+ * Copyright (c) 2014-2015 Jon Schlinkert
  * Released under the MIT license.
  */
 
@@ -16,7 +16,7 @@ var pkg = require('load-pkg')
  * Load devDependencies of the current project or
  * any other dependencies
  *
- * @param  {String|Array|Function|RegExp} `patterns`
+ * @param  {String|Array|Function|RegExp|Object} `patterns`
  * @param  {Object} `opts`
  * @return {Object}
  * @api public
