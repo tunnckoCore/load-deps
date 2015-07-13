@@ -64,6 +64,15 @@ var plugin = loadDeps('my-plugins-*', {
 ```
 
 
+## Benchmark
+
+Just run benchmarks against `load-plugins`
+
+```
+npm run benchmark
+```
+
+
 ## Related
 - [benz](https://github.com/tunnckocore/benz): Compose your control flow with absolute elegance. Support async/await, callbacks, thunks, generators, promises, observables, child processes and streams. Can power applications that need to have plugins. Useful for creating task, test and bench runners.
 - [create-callback](https://github.com/tunnckocore/create-callback): Create callback api from synchronous function. Same as `make-callback`, but won't handle generators and if async function is given returns it.
