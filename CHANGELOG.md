@@ -1,5 +1,9 @@
 
 
+## 1.0.3 / 2015-07-20, 2015
+- Release v1.0.3 / npm@v1.0.3
+- bump `load-pkg`
+
 ## 1.0.2 / 2015-07-13, 2015
 - Release v1.0.2 / npm@v1.0.2
 - benchmark script in package.json
