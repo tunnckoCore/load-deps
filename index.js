@@ -9,8 +9,8 @@
 'use strict'
 
 var matcher = require('is-match')
+var loadPkg = require('load-pkg')
 var extend = require('extend-shallow')
-var pkg = require('load-pkg')
 
 /**
  * Load devDependencies of the current project or
@@ -22,8 +22,12 @@ var pkg = require('load-pkg')
  * @api public
  */
 module.exports = function loadDeps (patterns, opts) {
-  opts = extend({type: 'devDependencies'}, opts)
+  opts = extend({
+    cwd: process.cwd(),
+    type: 'devDependencies'
+  }, opts)
 
+  var pkg = loadPkg.sync(opts.cwd) || {}
   var deps = extend({}, opts.type ? pkg[opts.type] : pkg.dependencies)
   var isMatch = matcher(patterns, opts)
   var res = {}
