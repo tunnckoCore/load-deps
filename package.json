@@ -4,6 +4,7 @@
   "description": "Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. Faster alternative to `load-plugins`.",
   "repository": "tunnckoCore/load-deps",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -22,7 +23,8 @@
     "matcha": "^0.6.1",
     "node-bar": "^0.2.0",
     "node-baz": "^0.2.0",
-    "node-foo": "^0.2.3"
+    "node-foo": "^0.2.3",
+    "pre-commit": "^1.1.2"
   },
   "keywords": [
     "app",
