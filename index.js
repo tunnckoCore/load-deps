@@ -34,7 +34,7 @@ module.exports = function loadDeps (patterns, opts) {
 
   var keys = Object.keys(deps)
   var len = keys.length
- 
+
   for (var i = 0; i < len; i++) {
     var name = keys[i]
     if (name && isMatch(name)) {
