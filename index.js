@@ -34,9 +34,8 @@ module.exports = function loadDeps (patterns, opts) {
 
   var keys = Object.keys(deps)
   var len = keys.length
-  var i = 0
-
-  while (i++ < len) {
+ 
+  for (var i = 0; i < len; i++) {
     var name = keys[i]
     if (name && isMatch(name)) {
       var key = renameKey(name, opts)
