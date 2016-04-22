@@ -1,5 +1,9 @@
 
 
+## 1.0.6 - 2016-04-22
+- Release v1.0.6 / npm@v1.0.6
+- convert license from markdown to plain text, and rename `LICENSE.md` -> `LICENSE`
+
 ## 1.0.5 - 2016-04-22
 - Release v1.0.5 / npm@v1.0.5
 - use `verb` to generate readme and such stuff 
