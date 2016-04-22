@@ -1,6 +1,6 @@
 # [load-deps][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. Faster alternative to `load-plugins`.
+> Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. 15-20x times faster alternative to `load-plugins` and `gulp-load-plugins`.
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
