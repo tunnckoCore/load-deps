@@ -66,10 +66,21 @@ var plugin = loadDeps('my-plugins-*', {
 
 ## Benchmark
 
-Just run benchmarks against `load-plugins`
+Just run benchmarks against `load-plugins` and `gulp-load-plugins`. It is 15-20x faster then them.
 
 ```
 npm run benchmark
+```
+
+results as of `22 April, 2016`
+
+```
+[charlike@voltaire load-deps]$ npm run benchmark
+  load-plugins x 205 ops/sec ±3.09% (61 runs sampled)
+  load-deps x 14,297 ops/sec ±10.74% (63 runs sampled)
+  gulp-load-plugins x 813 ops/sec ±2.27% (62 runs sampled)
+
+Fastest is load-deps
 ```
 
 

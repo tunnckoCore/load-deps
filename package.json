@@ -18,8 +18,15 @@
     "load-pkg": "^3.0.1"
   },
   "devDependencies": {
+    "ansi": "^0.3.1",
+    "ansi-bold": "^0.1.1",
     "app-name": "^0.2.0",
     "assertit": "^0.1.0",
+    "benchmark": "^2.1.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-j140": "^1.0.1",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-octet": "^1.0.2",
     "load-plugins": "^2.1.0",
     "matcha": "^0.6.1",
     "node-bar": "^0.2.0",
