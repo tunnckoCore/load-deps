@@ -1,7 +1,7 @@
 {
   "name": "load-deps",
   "version": "1.0.4",
-  "description": "Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. 15-20x times faster alternative to `load-plugins` and `gulp-load-plugins`.",
+  "description": "Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. 15-20x times faster alternative to [load-plugins][] and [gulp-load-plugins][].",
   "repository": "tunnckoCore/load-deps",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "precommit.silent": true,
@@ -68,11 +68,28 @@
     "task"
   ],
   "verb": {
+    "run": true,
     "toc": false,
     "layout": "empty",
     "tasks": [
       "readme"
-    ]
+    ],
+    "related": {
+      "list": [
+        "load-plugins",
+        "gulp-load-plugins",
+        "load-pkg",
+        "is-match",
+        "micromatch"
+      ]
+    },
+    "reflinks": [
+      "load-plugins",
+      "gulp-load-plugins"
+    ],
+    "lint": {
+      "reflinks": true
+    }
   },
   "standard": {
     "ignore": [

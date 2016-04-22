@@ -11,14 +11,38 @@
 var utils = require('./utils')
 
 /**
- * Load devDependencies of the current project or
- * any other dependencies
+ * > Load modules of the current project, by default loads dependencies
+ * from `devDependency` property from `package.json`, but can be customized.
+ *
+ * **Example**
+ *
+ * ```js
+ * var appname = require('app-name')
+ * var loadDeps = require('load-deps')
+ *
+ * var strip = ['gulp', 'handlebars', 'helpers']
+ * var rename = function renameFn(name) {
+ *   return appname(name, strip)
+ * }
+ *
+ * var plugin = loadDeps('gulp-*', {renameKey: rename})
+ *
+ * gulp.task('default', function () {
+ *   gulp.src('test/*.js')
+ *     .pipe(plugin.jshint())
+ *     .pipe(plugin.mocha())
+ *     .pipe(plugin.stylus())
+ *     .pipe(plugin.mustache())
+ *     .pipe(plugin.istanbul())
+ * })
+ * ```
  *
  * @param  {String|Array|Function|RegExp|Object} `patterns`
- * @param  {Object} `opts`
+ * @param  {Object} `opts` see [options section](#options)
  * @return {Object}
  * @api public
  */
+
 module.exports = function loadDeps (patterns, opts) {
   opts = utils.extend({
     cwd: process.cwd(),

@@ -1,19 +1,31 @@
 # [load-deps][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. 15-20x times faster alternative to `load-plugins` and `gulp-load-plugins`.
+> Just load devDependencies of the current project or any other dependencies. Useful for any node.js app that needs to load plugins from node_modules. 15-20x times faster alternative to [load-plugins][] and [gulp-load-plugins][].
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
-
 
 ## Install
 ```
 npm i load-deps --save
-npm test
 ```
-
 
 ## Usage
 > For more use-cases see the [tests](./test.js)
+
+```js
+const loadDeps = require('load-deps')
+```
+
+### [loadDeps](index.js#L46)
+> Load modules of the current project, by default loads dependencies from `devDependency` property from `package.json`, but can be customized.
+
+**Params**
+
+* `patterns` **{String|Array|Function|RegExp|Object}**    
+* `opts` **{Object}**: see [options section](#options)    
+* `returns` **{Object}**  
+
+**Example**
 
 ```js
 var appname = require('app-name')
@@ -37,9 +49,9 @@ gulp.task('default', function () {
 ```
 
 ## Options
-### options.require
 
-Pass a custom function for `require`ing files.
+### options.require
+> Pass a custom function for `require`ing files.
 
 ```js
 var loadDeps = require('load-deps')
@@ -51,8 +63,7 @@ var plugin = loadDeps('gulp-*', {
 ```
 
 ### options.renameKey
-
-Pass a renameKey function to change how plugins are named.
+> Pass a renameKey function to change how plugins are named.
 
 ```js
 var loadDeps = require('load-deps')
@@ -63,10 +74,8 @@ var plugin = loadDeps('my-plugins-*', {
 })
 ```
 
-
 ## Benchmark
-
-Just run benchmarks against `load-plugins` and `gulp-load-plugins`. It is 15-20x faster then them.
+> It is 15-20x faster than [load-plugins][] and [gulp-load-plugins][].
 
 ```
 npm run benchmark
@@ -83,40 +92,35 @@ results as of `22 April, 2016`
 Fastest is load-deps
 ```
 
-
 ## Related
-- [benz](https://github.com/tunnckocore/benz): Compose your control flow with absolute elegance. Support async/await, callbacks, thunks, generators, promises, observables, child processes and streams. Can power applications that need to have plugins. Useful for creating task, test and bench runners.
-- [create-callback](https://github.com/tunnckocore/create-callback): Create callback api from synchronous function. Same as `make-callback`, but won't handle generators and if async function is given returns it.
-- [extend-shallow](https://github.com/jonschlinkert/extend-shallow): Extend an object with the properties of additional objects. node.js/javascript util.
-- [is-match](https://github.com/jonschlinkert/is-match): Create a matching function from a glob pattern, regex, string, array, object or function.
-- [is-kindof](https://github.com/tunnckocore/is-kindof): Check type of given javascript value. Support promises, generators, streams, and native types. Thin wrapper around `kind-of` module.
-- [is-extendable](https://github.com/jonschlinkert/is-extendable): Returns true if a value is any of the object types: array, regexp, plain object, function or date. This is useful for determining if a value can be extended, e.g. "can the value have keys?"
-- [load-plugins](https://github.com/jonschlinkert/load-plugins): Load plugins for gulp, grunt, assemble, verb any node.js app that needs to load plugins from node_modules or local folders.
-- [load-pkg](https://github.com/jonschlinkert/load-pkg): Load the package.json in the base of the user's current project.
-
+* [gulp-load-plugins](https://www.npmjs.com/package/gulp-load-plugins): Automatically load any gulp plugins in your package.json | [homepage](https://github.com/jackfranklin/gulp-load-plugins)
+* [is-match](https://www.npmjs.com/package/is-match): Create a matching function from a glob pattern, regex, string, array,… [more](https://www.npmjs.com/package/is-match) | [homepage](https://github.com/jonschlinkert/is-match)
+* [load-pkg](https://www.npmjs.com/package/load-pkg): Loads the package.json from the root of the user's current project. | [homepage](https://github.com/jonschlinkert/load-pkg)
+* [load-plugins](https://www.npmjs.com/package/load-plugins): Load plugins for gulp, grunt, assemble, verb any node.js app that… [more](https://www.npmjs.com/package/load-plugins) | [homepage](https://github.com/jonschlinkert/load-plugins)
+* [micromatch](https://www.npmjs.com/package/micromatch): Glob matching for javascript/node.js. A drop-in replacement and faster alternative to… [more](https://www.npmjs.com/package/micromatch) | [homepage](https://github.com/jonschlinkert/micromatch)
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/load-deps/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
-
 ## [Charlike Make Reagent](http://j.mp/1stW47C) [![new message to charlike][new-message-img]][new-message-url] [![freenode #charlike][freenode-img]][freenode-url]
 
-[![tunnckocore.tk][author-www-img]][author-www-url] [![keybase tunnckocore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
+[![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
 
+[load-plugins]: https://github.com/jonschlinkert/load-plugins
+[gulp-load-plugins]: https://github.com/jackfranklin/gulp-load-plugins
 
 [npmjs-url]: https://www.npmjs.com/package/load-deps
 [npmjs-img]: https://img.shields.io/npm/v/load-deps.svg?label=load-deps
 
-[license-url]: https://github.com/tunnckoCore/load-deps/blob/master/LICENSE.md
+[license-url]: https://github.com/tunnckoCore/load-deps/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
-
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/load-deps
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/load-deps.svg
 
 [travis-url]: https://travis-ci.org/tunnckoCore/load-deps
-[travis-img]: https://img.shields.io/travis/tunnckoCore/load-deps.svg
+[travis-img]: https://img.shields.io/travis/tunnckoCore/load-deps/master.svg
 
 [coveralls-url]: https://coveralls.io/r/tunnckoCore/load-deps
 [coveralls-img]: https://img.shields.io/coveralls/tunnckoCore/load-deps.svg
@@ -126,7 +130,6 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [standard-url]: https://github.com/feross/standard
 [standard-img]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
-
 
 [author-www-url]: http://www.tunnckocore.tk
 [author-www-img]: https://img.shields.io/badge/www-tunnckocore.tk-fe7d37.svg
@@ -146,5 +149,6 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [freenode-url]: http://webchat.freenode.net/?channels=charlike
 [freenode-img]: https://img.shields.io/badge/freenode-%23charlike-5654a4.svg
 
-[new-message-url]: https://github.com/tunnckoCore/messages
-[new-message-img]: https://img.shields.io/badge/send%20me-message-green.svg
+[new-message-url]: https://github.com/tunnckoCore/ama
+[new-message-img]: https://img.shields.io/badge/ask%20me-anything-green.svg
+
