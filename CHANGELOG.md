@@ -1,5 +1,13 @@
 
 
+## 1.0.5 - 2016-04-22
+- Release v1.0.5 / npm@v1.0.5
+- use `verb` to generate readme and such stuff 
+- update description
+- update benchmarks
+- use `lazy-cache`, optimizations
+- be more strict
+
 ## 1.0.4 - 2016-02-23
 - Release v1.0.4 / npm@v1.0.4
 - expose `cwd` to options
