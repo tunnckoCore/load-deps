@@ -14,6 +14,7 @@
   "dependencies": {
     "extend-shallow": "^2.0.1",
     "is-match": "^0.4.0",
+    "lazy-cache": "^1.0.3",
     "load-pkg": "^3.0.1"
   },
   "devDependencies": {
@@ -26,6 +27,10 @@
     "node-foo": "^0.2.3",
     "pre-commit": "^1.1.2"
   },
+  "files": [
+    "index.js",
+    "utils.js"
+  ],
   "keywords": [
     "app",
     "dep",
@@ -55,6 +60,13 @@
     "resolve",
     "task"
   ],
+  "verb": {
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ]
+  },
   "standard": {
     "ignore": [
       "benchmark/**"
